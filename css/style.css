@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    padding: 20px;
+    background-image: url('../images/header_img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.icon-row{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    margin: 0px auto 0px auto;
+}
+.icon{
+    background-color: black;
+    width: 15%;
+    border-radius: 50%;
+    padding: 2px;
+    /* border: blanchedalmond solid 1px; */
+    text-align: center;
+}
+.icon img{
+    margin: 0px auto 0px auto;
+}
