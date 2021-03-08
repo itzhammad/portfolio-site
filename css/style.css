@@ -1,29 +1,167 @@
+@font-face {
+    font-family: "Consolas";
+    /* src: url("../fonts/Ubuntu-Light.ttf"); */
+    src: url("../fonts/CONSOLA.TTF");
+
+    font-family: "ubuntu";
+    src: url('../fonts/Ubuntu-Light.ttf');
+}
 *{
+    font-family: Consolas, 'Courier New', monospace;
     margin: 0px;
     padding: 0px;
 }
 
+.white{
+    color: white;
+}
+.yellow{
+    color: yellow;
+}
+.orange{
+    color: orange;
+}
+.light-blue{
+    color: cyan;
+}
 .header{
+    text-align: center;
     padding: 20px;
-    background-image: url('../images/header_img.jpg');
+    background-image: url('../images/header-img.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 550px;
 }
 .icon-row{
-    display: flex;
-    flex-direction: row;
-    width: 25%;
     margin: 0px auto 0px auto;
 }
 .icon{
-    background-color: black;
-    width: 15%;
-    border-radius: 50%;
-    padding: 2px;
-    /* border: blanchedalmond solid 1px; */
     text-align: center;
 }
 .icon img{
+    width:25px;
+    height:25px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.header-heading h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 30px 0px 0px 0px;;
+    font-size: 65px;
+}
+.header-heading span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: cyan;
+}
+.header-heading{
+    text-align: center;
+}
+.potrait-pic img{
+    padding: 5px;
+    border: 5px solid cyan;
+    border-radius: 50%;
+    margin: 25px 0px 25px 0px;
+}
+
+.slogan-text{
+    font-size: 1.2em;
+    padding: 10px 0px 30px 0px;
+}
+
+.btn1{
+    padding: 10px 30px 10px 30px;
+    color: cyan;
+    border: 1pX cyan solid;
+    border-radius: 2px;
+    background-color: black;
+    font-size: 1em;
+}
+.btn2{
+    padding: 10px 30px 10px 30px;
+    color: white;
+    border: 1px white solid;
+    border-radius: 2px;
+    background-color: black;
+    font-size: 1em;
+}
+
+.btn1:hover{
+        padding: 10px 30px 10px 30px;
+        color: white;
+        border: 1px cyan solid;
+        border-radius: 2px;
+        background-color: cyan;
+        font-size: 1em;
+}
+.btn2:hover{
+        padding: 10px 30px 10px 30px;
+        color: black;
+        border: 1px white solid;
+        border-radius: 2px;
+        background-color: white;
+        font-size: 1em;
+}
+.heading,.heading span{
+    margin: 100px 0px 25px 0px;
+    text-align: center;
+    font-size: 60px;
+    font-family: ubuntu;
+}
+.about-section{
     margin: 0px auto 0px auto;
+    padding: 0px 0px 50px 0px;
+    width: 82%;
+    text-align: center;
+}
+.about-image{
+    width: 150px; height: 150px;
+    margin: 5px auto 20px auto;
+}
+.about-paragraph{
+    font-family: ubuntu;
+    font-weight: bold;
+    text-align:center;
+    line-height: 25px;
+    margin: 0px 0px 50px 0px;
+}
+
+.progress-bar-outer{
+    background-color: rgb(238, 238, 238);
+    border-radius: 25px;
+}
+.progress-bar{
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,81,29,1) 0%, rgba(252,176,69,1) 71%);
+    border-radius: 25px;
+    transition: 2s ease-in-out;
+}
+.progress-text{
+font-family: ubuntu;
+color: white;
+margin-left: 15px;
+float: left;
+}
+.progress-percentage{
+color: white;
+font-family: ubuntu;
+}
+
+.academic-section{
+    margin: 0px auto 0px auto;
+    width: 82%;
+}
+.academic-container:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
 }
